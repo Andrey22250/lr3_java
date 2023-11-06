@@ -9,13 +9,13 @@ public class CPU {
         this.name_cpu = name_cpu;
     }
     public CPU(String name_cpu, int frequency, int cores, int treads) {
-        SetArgument(name_cpu, frequency, cores, treads);
+        SetCPU(name_cpu, frequency, cores, treads);
     }
     private boolean CheckCor(String name_cpu, int frequency, int cores, int treads)
     {
-        return frequency>0 && cores > 0 && treads>0;
+        return frequency>0 && cores > 0 && treads>0 && !name_cpu.isEmpty();
     }
-    private void SetArgument(String name_cpu, int frequency, int cores, int treads)
+    private void SetCPU(String name_cpu, int frequency, int cores, int treads)
     {
         if (CheckCor(name_cpu, frequency, cores, treads))
         {
@@ -63,6 +63,6 @@ public class CPU {
         System.out.print("Введите кол-во потоков процессора: ");
         treads = in.nextInt();
 
-        SetArgument(name_cpu, frequency, cores, treads);
+        SetCPU(name_cpu, frequency, cores, treads);
     }
 }
