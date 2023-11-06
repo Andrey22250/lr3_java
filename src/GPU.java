@@ -5,6 +5,7 @@ public class GPU {
     private int TDP;
     private int min_TDP;
     private int flag = 0;
+
     public GPU() { flag = 1; }
     public GPU(String name_gpu) {
         this.name_gpu = name_gpu;
