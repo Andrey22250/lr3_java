@@ -38,9 +38,9 @@ public class Motherboard {
 
         Scanner in = new Scanner(System.in);
 
-        System.out.print("Введите название процессора: ");
+        System.out.print("Введите название материнской платы: ");
         name_mrbrd = in.nextLine();
-        System.out.print("Введите частоту процессора: ");
+        System.out.print("Введите чипсет: ");
         chipset = in.nextLine();
 
         SetMrbrd(name_mrbrd, chipset);
