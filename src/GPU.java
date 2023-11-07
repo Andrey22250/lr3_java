@@ -26,12 +26,11 @@ public class GPU {
             this.name_gpu = name_gpu;
             this.vram = vram;
             this.TDP = TDP;
-
-        }
-        if (flag == 0)
-        {
-            this.min_TDP = TDP * 85 / 100;
-            flag = 1;
+            if (flag == 0)
+            {
+                this.min_TDP = TDP * 85 / 100;
+                flag = 1;
+            }
         }
         else
         {
