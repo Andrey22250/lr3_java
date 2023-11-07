@@ -1,5 +1,5 @@
 public enum Status {
-    CREATE("В ожидании"),
+    CREATE("Создан"),
     WORKING ("В сборке"),
     FINISHED ("Готов к выдаче");
 
@@ -7,6 +7,10 @@ public enum Status {
     Status(String name)
     {
         this.name = name;
+    }
+
+    public String getName() {
+        return name;
     }
 
     public static Status intToStatus (int Status)
