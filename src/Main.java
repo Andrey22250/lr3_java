@@ -2,7 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        //пример работы с Build
+        //пример работы с PC
         PC[] pcList = new PC[2];
 
         pcList[0] = new PC();
