@@ -19,6 +19,7 @@ public class Main {
 
         //пример работы с Build
         Build BuildEx = new Build("Андрей");
+        BuildEx.out_build();
         BuildEx.ChangeStatus(Status.FINISHED);
         BuildEx.out_build();
     }
